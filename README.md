@@ -20,7 +20,7 @@ This project is covered by the [Apache License, Version 2.0](http://www.apache.o
 
     $ java -jar target/ioperformance-*.jar [<dir>] >results.html
 
-where <dir> is an optional parameter for the path name of the file system
+where `<dir>` is an optional parameter for the path name of the file system
 directory where the temporary test file will be generated.
 If not provided, the Java I/O temp dir will get used.
 Use `.` to run the test in the current directory.
