@@ -33,7 +33,7 @@ public class IoPerformance {
                 .append("  </head>\n")
                 .append("  <body>\n")
                 .append("    <table>\n")
-                .append("      <caption>Results for temp dir <code>" + tmpdir + "<code></caption>\n")
+                .append("      <caption>Results for dir <code>" + tmpdir + "<code></caption>\n")
                 .append("      <thead align=\"right\"><tr><th>Iteration</th><th>Sustainable<br>Write Rate<br>[KB/s]</th><th>Sustainable<br>Read Rate<br>[KB/s]</th></tr></thead>\n")
                 .append("      <tbody align=\"right\">\n");
             for (int i = 1; i <= ITERATIONS; i++) {
@@ -57,8 +57,7 @@ public class IoPerformance {
                     }
                 }
                 final long done = nanoTime();
-                if (!Arrays.equals(data, clone))
-                    throw new IllegalArgumentException();
+                assert Arrays.equals(data, clone);
                 out.printf("        <tr><td>%d</td><td>%,d</td><td>%,d</td></tr>\n",
                         i,
                         COEFFICIENT / (read - write),
