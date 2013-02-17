@@ -8,6 +8,10 @@ It can get used to test the performance of any storage media, e.g.
 internal/external hard disks, flash disks, SAN, NAS, etc.
 The result is written to standard output as simple HTML.
 
+## License
+
+This project is covered by the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
+
 ## Build Instructions
 
     $ mvn clean install
