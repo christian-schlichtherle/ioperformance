@@ -29,7 +29,7 @@ public class IoPerformance {
                 .append("<html>\n")
                 .append("  <head>\n")
                 .append("    <title>I/O Performance Test</title>\n")
-                .append("    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=" + Charset.defaultCharset().name() + "\">\n")
+                .append("    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=" + Charset.defaultCharset() + "\">\n")
                 .append("  </head>\n")
                 .append("  <body>\n")
                 .append("    <table>\n")
