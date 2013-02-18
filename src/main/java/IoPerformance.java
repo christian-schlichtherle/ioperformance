@@ -2,7 +2,6 @@ import java.io.*;
 import static java.lang.System.*;
 import java.nio.charset.Charset;
 import java.util.*;
-import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * @author Christian Schlichtherle
@@ -17,7 +16,7 @@ public class IoPerformance {
     private static final long COEFFICIENT = (long) DATA_SIZE / KILOBYTE * NANOS_PER_SECOND;
 
     public static void main(final String[] args) throws IOException {
-        final Random rnd = ThreadLocalRandom.current();
+        final Random rnd = new Random();
         final byte[] data = new byte[DATA_SIZE];
         final byte[] clone = new byte[DATA_SIZE];
         final File tmpdir = new File(0 < args.length
